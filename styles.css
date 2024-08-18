@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'myFont';
+    src: url(/FONTS/dogicapixel.ttf);
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+ }
+}
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    background-image: url('images/ea5c3df2c25b8ac31815539fb1ba0447\ \(1\).jpg');
+    background-size: contain;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    height: 400PX;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.0);
+    box-shadow: 
+    0 0 10px #fff, /* White glow */
+    0 0 20px #fff,
+    0 0 30px #4787ff,
+    0 0 40px #4787ff,
+    0 0 50px #4787ff,
+    0 0 60px #4787ff,
+    0 0 70px #4787ff; 
+    backdrop-filter: blur(10px);
+    border: 1.5px solid white;
+}
+.imgContainer{  
+    width: 425px;
+    height: 650px;
+    background-image: url('images/356881647-d22371c9-edfd-45d0-b1d8-3d5ee8d98023.png');
+    background-size: cover;
+    background-position: 0; /* Adjust background position */
+    position: absolute; /* Position absolutely within the section */
+    bottom: 0;
+    right: 0;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    z-index: 1; /* Ensure it's above other content if necessary */
+}
+.exp{
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height: 50PX;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.0);
+    box-shadow: 
+    6px 6px 12px rgba(255, 255, 255, 0.12),
+    -6px -6px 12px rgba(0, 0, 0, 0.12);  
+     
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    z-index: 1;
+}
+
+.project{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    padding: 0;
+    width: 510px;
+    height: 300PX;
+    background: rgba( 0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    margin-left: -10px;
+    border: 1px solid rgba( 255, 255, 255, 0.25 );
+}
+
+.project:nth-child(2){
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    padding: 0;
+    width: 225px;
+    height: 300PX;
+    background: rgba( 0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+}
+.fade{
+     position: fixed; /* Position it fixed to the viewport */
+     width: 1920px;
+     height: 290px; /* Adjust the height as needed */
+     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+     z-index: 10; /* Ensure it is on top of other elements */
+     pointer-events: none; /* Make it non-interactive so other elements can be clicked */
+     bottom: 0;
+     right: 0;
+     padding: 0%;
+     margin: 0%;
+}
+.searchContainer{
+position: absolute;
+margin-top: 15px;
+}
+.search{
+    background-color: transparent ;
+    color: #000000;
+    border-color: transparent;
+    margin-left: 5px;
+    width: 330px;
+}
+.search::placeholder{
+    background-color: transparent;
+    color: white;
+    font-family: myFont;
+    font-size: 14px;
+}
+.about1{
+    color: white;
+    font-family: myFont;
+    font-size: 48px;
+    margin-top: 15px;
+    padding: 0px;
+    text-shadow: 0 0 10px #fff, /* White glow */
+    0 0 20px #fff,
+    0 0 30px #4787ff,
+    0 0 40px #4787ff,
+    0 0 50px #4787ff,
+    0 0 60px #4787ff,
+    0 0 70px #4787ff;
+    
+}
+.aboutp1{
+    color: white;
+    font-family: myFont;
+    font-size: 14px;
+}
+.aboutp2{
+    color: white;
+    font-family: myFont;
+    font-size: 14px;
+}
+.techstack{
+    color: white;
+    font-family: myFont;
+    font-size: 26px;
+    margin-top: 15px;
+    padding-left: 10px;
+    text-shadow: 0 0 10px #fff, /* White glow */
+    0 0 20px #fff,
+    0 0 30px #4787ff,
+    0 0 40px #4787ff,
+    0 0 50px #4787ff,
+    0 0 60px #4787ff,
+    0 0 70px #4787ff;
+}
+.stackContainer{
+    position: relative;
+    width: 200px;
+    height: 240PX;
+    background: rgba( 0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    margin-left: 12px;
+}
+.cpp{
+    width: 20%;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+}
+.css{
+    width: 20%;
+    margin-bottom: 5px;
+}
+.html{
+    width: 20%;
+    margin-bottom: 5px;
+}
+.js{
+    width: 20%;
+    margin-bottom: 5px;
+}
+.git{
+    width: 20%;
+    margin-left: 10px;
+}
+.github{
+    width: 20%;
+}
+.blender{
+    width: 20%;
+}
+.ps{
+    width: 20%;
+}
+/*Sectioning*/
+.section {
+    
+        position: relative; /* Ensures the image is positioned relative to this section */
+        height: 100vh; /* Full viewport height */
+        overflow: hidden; /* Ensures no overflow beyond the section boundaries */
+        padding: 0; /* Remove padding if any */
+        margin: 0; /* Remove margin if any */
+}
+#section1{
+    overflow: hidden; /* Ensures that the image stays contained within section 1 */
+}
+#section2 {
+    background-color: #000000;
+    color: #fff;
+}
